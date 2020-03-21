@@ -2,5 +2,23 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import { HashRouter } from 'react-router-dom';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    const root = document.getElementById('root')
+    const app = (
+
+
+            <HashRouter>
+                {/* <PersistGate persistor={persistor}> */}
+                <App />
+                {/* </PersistGate> */}
+            </HashRouter>
+    )
+
+    ReactDOM.render(app, root);
+
+
+});
