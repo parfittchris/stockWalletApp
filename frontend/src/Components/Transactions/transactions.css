@@ -1,0 +1,31 @@
+#transactions {
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid lightgray;
+    border-radius:20px;
+    display: relative;
+    z-index: 0;
+    text-align: center;
+}
+
+#transactionSection {
+    height: 50vh;
+    overflow-y: scroll;
+}
+
+.componentTop {
+    margin: 4vh auto;
+}
+
+#transactionsTable {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 90%;
+    text-align: center;
+}
+
+.transactionsRow:nth-child(2n+1){
+    background-color: rgba(12, 12, 182, 0.15)
+}
+
+

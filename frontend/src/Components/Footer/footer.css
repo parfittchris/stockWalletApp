@@ -1,0 +1,22 @@
+#iexCredit {
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+    height: 4vh;
+    background-color: rgb(29, 29, 29);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+
+#iexCredit > a {
+    text-decoration: none;
+    color: gray;
+}
+
+#iexCredit > a:active {
+    text-decoration: none;
+    color: gray;
+}

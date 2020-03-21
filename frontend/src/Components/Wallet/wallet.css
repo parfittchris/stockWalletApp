@@ -1,0 +1,104 @@
+#walletComponent {
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid lightgray;
+    border-radius:20px;
+    display: relative;
+    z-index: 0;
+}
+
+#walletContents {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 45%;
+}
+
+.highPrice {
+    color: rgb(6, 105, 6);
+}
+
+.lowPrice {
+    color: rgb(131, 8, 8);
+}
+
+.stockPrice {
+    color: black;
+}
+
+.stockSection {
+    overflow-y: scroll;
+    max-height: 40%;
+}
+
+.stockSectionActive {
+    overflow-y: scroll;
+    max-height: 30%;
+}
+
+.tableHeader {
+    border-bottom: 3px solid gray;
+}
+
+#portfolioTable {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 90%;
+    text-align: center;
+}
+
+th {
+     padding: 5px;
+}
+
+.stockRow:nth-child(2n+1){
+    background-color: rgba(12, 12, 182, 0.15)
+}
+
+.stockRow:hover {
+    background-color: rgba(12, 12, 182, 0.5);
+    cursor: pointer;
+    transition-delay: .125s;
+}
+
+
+.userImage {
+    background-image: url("../../assets/defaultuser.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+#sellForm {
+    text-align: center;
+}
+
+#sellInput {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gray;
+    width: 10%;
+    margin: 3%;
+    text-align: center;
+    font-size: 18px;
+}
+
+#sellButton {
+    height: 30px;
+    width: 10%;
+    border-radius: 5px;
+    background-color: rgb(185, 44, 44);
+    color: white;
+    font-weight: 700;
+    border: 1px solid black;
+}
+
+#sellButton:active {
+    background-color: rgb(107, 22, 22);
+}

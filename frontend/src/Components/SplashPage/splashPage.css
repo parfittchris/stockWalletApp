@@ -1,0 +1,75 @@
+.link {
+    cursor: pointer;
+    color: white;
+    text-decoration: underline;
+}
+
+#splashPageComponent {
+    position: absolute;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    min-width: 25vw;
+    min-height: 50vh;
+    top: 20vh;
+    left: 37.5vw;
+    background-color: rgba(63, 30, 30, 0.7);
+    border-radius: 25px;
+    display:flex;
+    flex-direction: column;;
+}
+
+.homeInput {
+    position: relative;
+    background-color: rgb(15, 15, 48, .8);
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    border: none;
+}
+
+.startForm > input {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    height: 30px;
+    width: 70%;
+    margin: 5px auto;
+    outline: none;
+}
+
+.signUpButton {
+    background-color:rgb(15, 15, 48, .8);
+    color: white;
+    width: 50%;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 14px;
+    margin: 10px;
+    border: none;
+    outline: none;
+}
+
+.signUpButton:active {
+    background-color:rgb(15, 15, 48, 1);
+}
+
+::placeholder {
+    color: rgb(255,255, 255, .5);
+    text-align: center;
+    font-size: 14px;
+}
+
+.error {
+    color: white;
+}
+
+#errorsBubble {
+    min-width: 40vw;
+    position: absolute;
+    bottom: 2vh;
+    left: 30vw;
+    border-radius: 10px;
+    background-color:rgb(15, 15, 48, .8);
+}

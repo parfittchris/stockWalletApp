@@ -1,0 +1,29 @@
+#indexPage {
+    height: 60vh;
+    width: 60vw;
+    text-align: center;
+    position: absolute;
+    left: 20vw;
+    top: 30vh;
+}
+
+.indexTitle {
+    color: white
+}
+
+.indexText {
+    color: white;
+}
+
+.indexButtons > button {
+    color: rgb(5, 5, 151);
+    font-weight: 700;
+    font-size: 18px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+.indexButtons > button:active {
+    background-color: rgb(170, 170, 170);
+}
