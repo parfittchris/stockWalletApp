@@ -43,7 +43,7 @@ class Wallet extends React.Component {
     let table = document.getElementById('portfolioTable');
     let value = 0;
     let allStocks = [];
-
+    console.log(this.state.stockNames)
     if (table) {
       table.innerHTML = '';
       let header = table.insertRow(0);
@@ -90,7 +90,10 @@ class Wallet extends React.Component {
                         res.stock.latestPrice.toFixed(2) * stock.quantity
                       ).toFixed(2)}</td>`;
           row.onclick = this.selectStock.bind(this);
-          table.appendChild(row);
+          
+          if (stock.quantity !== 0) {
+            table.appendChild(row);
+          }
 
           this.setState({
             value: value.toFixed(2)
@@ -182,12 +185,8 @@ class Wallet extends React.Component {
         price: this.state.selected.stock.latestPrice
       };
 
-      if (sellQuantity === userQuantity) {
-        this.props.sellAllStock(stock).then(this.removeRow(stock))
-      } else {
-        this.props.updateCurrentStock(stock).then(this.refresh());
-      }
-
+      this.props.updateCurrentStock(stock).then(this.refresh);
+    
       const transaction = {
         user_id: this.props.userId,
         transactionType: 'sell',

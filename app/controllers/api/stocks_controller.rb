@@ -27,10 +27,11 @@ class Api::StocksController < ApplicationController
 
     def destroy
         @stock = Stock.all.find_by(user_id: params[:user_id], name: params[:name])
+
         @stock.destroy
 
         @user = User.find_by(id: params[:user_id])
-
+        
         newCash = @user[:money] - (params[:quantity].to_i * params[:price].to_f)
         @user.update(money: newCash)
         
